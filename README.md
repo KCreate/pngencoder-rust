@@ -25,8 +25,15 @@ curl -v -silent https://github.com/KCreate/pngencoder-rust 2>&1 | pngencoder
 
 This will produce an image called __output.png__ in the directory the command is run in.
 
-![Example](./output.png)
+![Example](./img/output.png)
 
+# More examples
+
+![Example](./img/output_romeojuliet.png)
+
+This is the entire play of Romeo and Juliet. It only took 64 miliseconds (Download time not included, see image below)
+
+![Command line output](./img/time.jpg)
 
 # License
 The MIT License (MIT)
