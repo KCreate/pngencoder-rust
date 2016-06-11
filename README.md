@@ -2,6 +2,32 @@
 
 Basically [this](https://github.com/KCreate/pngencoder), but written in [Rust](https://www.rust-lang.org/).
 
+# Installation
+
+You will need [Cargo](https://crates.io/) to build this.
+```sh
+git clone https://github.com/KCreate/pngencoder-rust.git
+cd pngencoder-rust
+cargo build --release
+sudo cp ./target/release/pngencoder /usr/bin/
+```
+
+If you install to another location, you will need to make sure that it is in your $PATH variable.
+
+# Usage
+
+You can just pipe the output of every command directly into it.
+In this example I pipe the result of a curl request into it.
+
+```sh
+curl -v -silent https://github.com/KCreate/pngencoder-rust 2>&1 | pngencoder
+```
+
+This will produce an image called __output.png__ in the directory the command is run in.
+
+![Example](./output.png)
+
+
 # License
 The MIT License (MIT)
 Copyright (c) <2016 - present> <Leonard Schütz>
